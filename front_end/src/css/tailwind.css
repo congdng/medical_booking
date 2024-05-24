@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Josefin Sans", sans-serif;
+    @apply box-border;
+  }
+  svg {
+    @apply w-5 h-auto;
+  }
+  input {
+    @apply focus:outline-none;
+  }
+  select {
+    @apply focus:outline-none;
+  }
+}
+@layer utilities {
+  .readonly {
+    pointer-events: none;
+  }
+}
